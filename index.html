@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Haider Mirza</title>
+  <title> Haider Mirza </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <link href="assets/img/haider2.png" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -39,6 +40,16 @@
 </head>
 
 <body class="index-page">
+
+  <!-- AI Response Popup -->
+<div id="aiPopup" class="ai-popup">
+  <div class="ai-popup-content">
+    <button class="ai-close-btn" onclick="closePopup()">×</button>
+    <h3>AI Response</h3>
+    <div id="aiResponseText" class="ai-response-text"></div>
+  </div>
+</div>
+
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
@@ -400,7 +411,7 @@
             <li data-filter=".filter-books">Books</li>
           </ul>
           <!-- End Portfolio Filters -->
-           <!-- Here section project add section starts -->
+          <!-- Here section project add section starts -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
             <!-- Calculater project starts here -->
@@ -421,7 +432,10 @@
                 </div>
                 <div class="portfolio-description-box">
                   <h2>Calculaters</h2>
-                  <p>A simple and responsive web-based calculator featuring two distinct user interfaces. Built with HTML, CSS, Bootstrap, and JavaScript, it performs basic arithmetic operations and showcases clean design and interactive functionality. Perfect for demonstrating fundamental front-end skills and UI design.</p>
+                  <p>A simple and responsive web-based calculator featuring two distinct user interfaces. Built with
+                    HTML, CSS, Bootstrap, and JavaScript, it performs basic arithmetic operations and showcases clean
+                    design and interactive functionality. Perfect for demonstrating fundamental front-end skills and UI
+                    design.</p>
                 </div>
               </div>
             </div>
@@ -440,14 +454,17 @@
                   <a href="https://haidertodolist.netlify.app/" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
-                 <div class="portfolio-description-box">
+                <div class="portfolio-description-box">
                   <h5>To do list</h5>
-                  <p>This project is a simple yet feature-rich To-Do List Web Application designed to help users manage their daily tasks efficiently. It offers an intuitive user interface with smooth interactions and supports both desktop and mobile devices. The application stores tasks locally to ensure data is retained even after closing or refreshing the browser.</p>
+                  <p>This project is a simple yet feature-rich To-Do List Web Application designed to help users manage
+                    their daily tasks efficiently. It offers an intuitive user interface with smooth interactions and
+                    supports both desktop and mobile devices. The application stores tasks locally to ensure data is
+                    retained even after closing or refreshing the browser.</p>
                 </div>
               </div>
             </div>
             <!-- To list start here -->
-         
+
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -688,7 +705,7 @@
     <!-- end Services Section -->
 
 
-    <!-- Contact Section -->
+    <!-- Contact Section starts Herr -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
@@ -697,8 +714,10 @@
         <!-- <p>Let's connect! I'm just a message away.</p> -->
         <p>Whether you have a project idea, need support, or just want to say hello — feel free to get in touch. I'm
           always open to discussing new ideas, creative work, or opportunities to be part of your vision.</p>
-      </div><!-- End Section Title -->
+      </div>
+      <!-- End Section Title -->
 
+      <!-- Information start here -->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
@@ -721,7 +740,8 @@
                   <h3>Call Us</h3>
                   <p>+91 8511697970</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
+              <!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
@@ -730,78 +750,44 @@
                   <p>haidermirza7072@gmailcom</p>
                 </div>
               </div>
+
+
               <!-- End Info Item -->
-
-
-
+              <!--End  Information start here  -->
               <iframe class="maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.768284516573!2d72.58897715!3d22.99554675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85bfd3f91667%3A0x81b8cb662e480b79!2sShah-E-Alam%2C%20Ahmedabad%2C%20Gujarat%20380028!5e0!3m2!1sen!2sin!4v1748446423204!5m2!1sen!2sin"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
-
-          <!-- <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
+          <!-- Form section stat here -->
+          <div class="contact-form" >
+            <h3>Send Me a Message</h3>
+            <form id="contactForm">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="text" name="subject" placeholder="Subject" required>
+              <input type="tel" name="mobile" placeholder="Mobile Number" required>
+              <textarea name="query" rows="5" placeholder="Your Query" required></textarea>
+              <button type="submit">Send Message</button>
             </form>
-          </div> -->
-          <!-- End Contact Form -->
 
-          <!-- Mine contack us start here  -->
-          <div class="ss">
-            <h2>Get in Touch Directly!</h2>
-            <p class="response-info">
-              We're eager to connect with you. The best way to reach us is through email or by giving us a call.
-              We aim to respond to all inquiries within 24-48 business hours.
-            </p>
-
-            <a href="haidermirza7072@gmailcom" class="action-button email-button">
-              <i class="fas fa-envelope"></i> Email Us Now
-            </a>
-            <a href="tel:+91 8511697970" class="action-button phone-button">
-              <i class="fas fa-phone-alt"></i> Call Us Now
-            </a>
-
+            <p id="formStatus"></p>
           </div>
-          <!-- Mine contack us end here  -->
 
+          <!-- End Contact us Form here -->
+
+              
+              </div>
+
+            </div>
+          </section>
         </div>
 
       </div>
 
     </section>
+
     <!-- ends Contact Section -->
 
   </main>

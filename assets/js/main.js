@@ -227,3 +227,52 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+// n8n webhook code here  
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const status = document.getElementById("formStatus");
+
+  status.innerText = "Sending... ⏳";
+  status.style.color = "orange";
+
+  fetch("https://haidermirza.app.n8n.cloud/webhook/4f637c6d-8053-46d2-a456-8297aab85109", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name: form.name.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      mobile: form.mobile.value,
+      query: form.query.value
+    })
+  })
+  .then(res => res.text())   // 🔥 JSON ❌ → TEXT ✅
+  .then(text => {
+
+    const popup = document.getElementById("aiPopup");
+    const responseBox = document.getElementById("aiResponseText");
+
+    responseBox.innerText = text;   // plain AI reply
+    popup.style.display = "flex";
+
+    status.innerText = "✅ Message sent & AI replied";
+    status.style.color = "green";
+
+    form.reset();
+  })
+  .catch(err => {
+    console.error(err);
+    status.innerText = "❌ Server error, please try again later";
+    status.style.color = "red";
+  });
+});
+
+function closePopup() {
+  document.getElementById("aiPopup").style.display = "none";
+}
